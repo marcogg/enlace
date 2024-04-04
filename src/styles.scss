@@ -1,0 +1,133 @@
+//  Main colors
+
+$azulEnlace:#0D204A;
+$aquaEnlace: #24bac6;
+$white: #fff;
+$orangeEnlace: #F16E00;
+
+// Template styles
+@import './styles/style.css';
+
+// Fonts
+
+    // Montserrat
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    //Nevermind
+        @font-face{
+            font-family: 'Nevermind';
+            font-style:normal;
+            font-weight: medium;
+            src: url('../fonts/nevermind/NeverMindsemi-serif-Medium.woff');
+        }
+        @font-face{
+            font-family: 'Nevermind';
+            font-style:normal;
+            font-weight: bold;
+            src: url('../fonts/nevermind/NeverMindsemi-serif-ExtraBold.woff');
+        }
+        @font-face{
+            font-family: 'Nevermind';
+            font-style:normal;
+            font-weight: light;
+            src: url('../fonts/nevermind/NeverMindsemi-serif-ExtraLight.woff');
+        }
+
+        @font-face{
+            font-family: 'Nevermind';
+            font-style:normal;
+            font-weight: 200;
+            src: url('../fonts/nevermind/NeverMindsemi-serif-ExtraLight.woff');
+        }
+
+// End: Fonts
+
+// General
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nevermind", serif;
+}
+
+h1{
+      letter-spacing: -2px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-orange{
+    color:#F16E00
+}
+// Header
+.logo {
+  padding: 10px;
+  height: auto;
+
+}
+
+// Hero
+
+.hero h3{
+    font-size: clamp(14pt, 2.5vw, 17pt);
+}
+
+// Button
+
+.btn-main {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 5px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #24bac6;
+  min-height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  &:hover{
+      color: #c1f7fe;
+      box-shadow: 0px 5px 30px rgba(65, 179, 241, 0.3);
+  }
+}
+
+.link-main {
+  margin-top: 30px;
+  line-height: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: $orangeEnlace;
+  min-height: 30px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  &:hover{
+      color: $azulEnlace;
+      text-shadow: 0px 5px 30px rgba(241, 132, 65, 0.3);
+  }
+}
+
+.flex-100{
+    flex-grow: 2;
+    flex-wrap: wrap;
+}
+
+.icon-blue{
+    color: $aquaEnlace
+}
+
+.caption{
+    color: $orangeEnlace !important;
+    font-weight: bold;
+    margin-bottom:0px;
+}
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
