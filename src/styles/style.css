@@ -9,6 +9,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 :root {
   scroll-behavior: smooth;
 }
@@ -24,8 +25,9 @@ a {
 }
 
 a:hover {
-  color: #717ff5;
+  color: #F16E00;
   text-decoration: none;
+  
 }
 
 h1,
@@ -263,7 +265,7 @@ section {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #5969f3;
+  background: #F16E00;
 }
 
 .navbar .dropdown ul {
@@ -1242,7 +1244,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: #5969f3;
+  background: #F16E00;
 }
 
 .portfolio .portfolio-wrap:hover img {
@@ -1722,7 +1724,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #5969f3;
+  background: #F16E00;
 }
 
 @keyframes animate-loading {
@@ -1821,7 +1823,7 @@ section {
 }
 
 .blog .entry .entry-content .read-more a:hover {
-  background: #5969f3;
+  background: #F16E00;
 }
 
 .blog .entry .entry-content h3 {
@@ -2299,7 +2301,7 @@ section {
 }
 
 .footer .footer-newsletter form input[type=submit]:hover {
-  background: #5969f3;
+  background: #F16E00;
 }
 
 .footer .footer-top {

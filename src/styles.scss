@@ -4,6 +4,7 @@ $azulEnlace:#0D204A;
 $aquaEnlace: #24bac6;
 $white: #fff;
 $orangeEnlace: #F16E00;
+$grey: #1f1f1f;
 
 // Template styles
 @import './styles/style.css';
@@ -130,4 +131,218 @@ p{
 
 .montserrat{
     font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+    &.plans{
+        font-size: clamp(100pt, 8vw, 120pt);
+        position:relative;
+        top:-50px;
+        margin-right:10px;
+        line-height: 0;
+
+        &.blue{
+            color: $aquaEnlace;
+        }
+
+        &.orange{
+            color: $orangeEnlace;
+        }
+        &.blueEnlace{
+            color: $azulEnlace;
+        }
+    }
+    
+}
+
+
+// Retiro
+
+#retiro{
+
+    &.counts{
+        background: url('../img/proyecta-bg.svg');
+        background-size: cover;
+        background-position: bottom center;
+        min-height: 50vh;
+    
+        & span{
+            font-family: 'Nevermind', serif;
+            color: $azulEnlace;
+        }
+
+        & .icon{
+        font-size: clamp(22pt, 3em, 32pt);
+                &.blue{
+            color: $aquaEnlace;
+        }
+
+        &.orange{
+            color: $orangeEnlace;
+        }
+        &.blueEnlace{
+            color: $azulEnlace;
+        }
+    }
+    
+    }
+}
+
+// Profesinal
+
+#profesional{
+    &.counts{
+    background: url('../img/profesional-bg.svg');
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 50vh;
+
+    & span{
+        font-family: 'Nevermind', serif;
+        color: $azulEnlace;
+    }
+
+    & .icon{
+        font-size: clamp(22pt, 3em, 32pt);
+                &.blue{
+            color: $aquaEnlace;
+        }
+
+        &.orange{
+            color: $orangeEnlace;
+        }
+        &.blueEnlace{
+            color: $azulEnlace;
+        }
+    }
+}
+}
+
+// Capitaliza
+
+#capitaliza{
+    &.counts{
+    background: url('../img/capitaliza-bg.svg');
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 50vh;
+
+    & span{
+        font-family: 'Nevermind', serif;
+        color: $azulEnlace;
+    }
+
+    & .icon{
+        font-size: clamp(22pt, 3em, 32pt);
+                &.blue{
+            color: $aquaEnlace;
+        }
+
+        &.orange{
+            color: $orangeEnlace;
+        }
+        &.blueEnlace{
+            color: $azulEnlace;
+        }
+    }
+}
+}
+
+// AUTO
+#seguro-auto{
+    &.counts{
+    background: url('../img/capitaliza-bg.svg');
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 50vh;
+
+    & span{
+        font-family: 'Nevermind', serif;
+        color: $azulEnlace;
+    }
+
+    & .icon{
+        font-size: clamp(22pt, 3em, 32pt);
+                &.blue{
+            color: $aquaEnlace;
+        }
+
+        &.orange{
+            color: $orangeEnlace;
+        }
+        &.blueEnlace{
+            color: $azulEnlace;
+        }
+        &.grey{
+            color: $grey;
+        }
+    }
+}
+}
+
+// SGMM
+#sgmm{
+    &.counts{
+    background: url('../img/sgmm-bg.svg');
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 50vh;
+
+    & span{
+        font-family: 'Nevermind', serif;
+        color: $azulEnlace;
+    }
+
+    & .icon{
+        font-size: clamp(22pt, 3em, 32pt);
+                &.blue{
+            color: $aquaEnlace;
+        }
+
+        &.orange{
+            color: $orangeEnlace;
+        }
+        &.blueEnlace{
+            color: $azulEnlace;
+        }
+        &.grey{
+            color: $grey;
+        }
+        &.aqua{
+            color:$aquaEnlace
+        }
+    }
+}
+}
+
+// HOGAR
+#hogar{
+    &.counts{
+    background: url('../img/hogar-bg.svg');
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 50vh;
+
+    & span{
+        font-family: 'Nevermind', serif;
+        color: $azulEnlace;
+    }
+
+    & .icon{
+        font-size: clamp(22pt, 3em, 32pt);
+                &.blue{
+            color: $aquaEnlace;
+        }
+
+        &.orange{
+            color: $orangeEnlace;
+        }
+        &.blueEnlace{
+            color: $azulEnlace;
+        }
+        &.grey{
+            color: $grey;
+        }
+    }
+}
 }

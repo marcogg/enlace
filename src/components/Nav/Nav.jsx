@@ -35,14 +35,14 @@ const Nav = () => {
                                 <ul>
                                     <li className="dropdown"><Link href="#"><span>Planes financieros</span> <i className="bi bi-chevron-right" /></Link>
                                         <ul>
-                                            <li><Link to={'/planes-para-retiro'}>Proyecta: Plan para el retiro con seguro de vida e invalidez</Link></li>
-                                            <li><Link to={'/planes-para-educacion'}>Profesional: Plan para la educación de tus hijos</Link></li>
-                                            <li><Link to={'/planes-para-ahorro'}>Capitaliza: Para inversión de ahorro con deducibilidad</Link></li>
+                                            <li><Link to={'/ahorro-para-retiro'}>Proyecta: Plan para el retiro con seguro de vida e invalidez</Link></li>
+                                            <li><Link to={'/plan-de-ahorro-para-educacion'}>Profesional: Plan para la educación de tus hijos</Link></li>
+                                            <li><Link to={'/plan-de-inversion-para-ahorro'}>Capitaliza: Para inversión de ahorro con deducibilidad</Link></li>
                                         </ul>
                                     </li>
-                                    <li><Link href="#">Seguro de Auto</Link></li>
-                                    <li><Link href="#">Seguro de Gastos Médicos Mayores</Link></li>
-                                    <li><Link href="#">Seguro para el hogar</Link></li>
+                                    <li><Link to={'/seguro-para-auto'}>Seguro de Auto</Link></li>
+                                    <li><Link to={'/seguro-gastos-medicos-mayores'}>Seguro de Gastos Médicos Mayores</Link></li>
+                                    <li><Link to={'/seguro-para-hogar'}>Seguro para el hogar</Link></li>
                                 </ul>
                             </li>
                             <li><Link className="getstarted scrollto" href="#about">Cotiza ahora</Link></li>

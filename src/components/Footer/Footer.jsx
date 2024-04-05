@@ -43,18 +43,18 @@ const Footer = () => {
                                     <strong>Teléfono:  </strong>
                                     <Link to={e => { e.preventDefault(); window.location = 'tel:55 1246 2462' }}>55 1246 2462</Link><br />
                                     <strong>WhatsApp:  </strong>
-                                    <Icon.Whatsapp className='icon-blue' size={12} /><Link to={e => { e.preventDefault(); window.location = 'https://wa.me/525631453998' }}> +52 56 3145 3998</Link>
+                                    <Link className="align-items-center" to={e => { e.preventDefault(); window.location = 'https://wa.me/525631453998' }}><Icon.Whatsapp size={12} /> +52 56 3145 3998</Link>
                                 </p>
                             </div>
-                            <div className="col-lg-4 col-6 footer-links">
+                            <div className="col-lg-4 col-12 footer-links">
                                 <h4>Nuestros Planes</h4>
                                 <ul>
-                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={''}>Plan Proyecta: PPR + Seguro de vida</Link></li>
-                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={''}>Pan Capitaliza: Inversión de Ahorros</Link></li>
-                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={''}>Plan Profesional: Ahorro para educación + Seguro Vida</Link></li>
-                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={''}>SGMM</Link></li>
-                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={''}>Seguro de auto</Link></li>
-                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={''}>Seguro para hogar</Link></li>
+                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/plan-ahorro-retiro'}>Plan Proyecta: PPR + Seguro de vida</Link></li>
+                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/plan-de-inversion-para-ahorro'}>Plan Capitaliza: Inversión de Ahorros</Link></li>
+                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/plan-de-ahorro-para-educacion'}>Plan Profesional: Ahorro para educación + Seguro Vida</Link></li>
+                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/seguro-gastos-medicos-mayores'}>SGMM</Link></li>
+                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/seguro-para-auto'}>Seguro de auto</Link></li>
+                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/seguro-para-hogar'}>Seguro para hogar</Link></li>
                                 </ul>
                             </div>
                         </div>
