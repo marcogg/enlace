@@ -151,7 +151,7 @@ const Home = () => {
                   <div className="col-md-6" data-aos="zoom-out" data-aos-delay={500}>
                     <div className="feature-box d-flex flex-wrap align-items-center">
                       <h3>Seguro de Gastos Médicos Mayores</h3>
-                      <Link to={'/segurp-gastos-medicos-mayores'} className='link-main flex-100 mt-4'>Conócelo</Link>
+                      <Link to={'/seguro-gastos-medicos-mayores'} className='link-main flex-100 mt-4'>Conócelo</Link>
                     </div>
                   </div>
                   <div className="col-md-6" data-aos="zoom-out" data-aos-delay={600}>
@@ -163,7 +163,7 @@ const Home = () => {
                   <div className="col-md-6" data-aos="zoom-out" data-aos-delay={700}>
                     <div className="feature-box d-flex flex-wrap align-items-center">
                       <h3>Seguro de Hogar</h3>
-                      <Link to={'/segurp-para-hogar'} className='link-main flex-100 mt-4'>Conócelo</Link>
+                      <Link to={'/seguro-para-hogar'} className='link-main flex-100 mt-4'>Conócelo</Link>
                     </div>
                   </div>
                 </div>
@@ -381,7 +381,7 @@ const Home = () => {
           </div>
         </section>{/* End Testimonials Section */}
         {/* ======= Contact Section ======= */}
-        <section id="contact" className="contact">
+        <section id="contacto" className="contact">
           <div className="container" data-aos="fade-up">
             <header className="section-header">
               <h2>Contacto</h2>

@@ -11,8 +11,8 @@ const Footer = () => {
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-12 text-center">
-                                <h4>Suscríbete a nuestro NewsLetter</h4>
-                                <p>Enviamos correos de valiosa información de vez en cuando. Nada de spam ✉️</p>
+                                <h4>Empieza tu plan hoy mismo</h4>
+                                <p>Déjanos tu correo para que construyamos juntos un plan a tu medida. Nada de spam ✉️</p>
                             </div>
                             <div className="col-lg-6">
                                 <form action method="post">

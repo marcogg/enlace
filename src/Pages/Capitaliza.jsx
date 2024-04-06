@@ -17,36 +17,36 @@ const Capitaliza = () => {
                             <div className="count-box" data-aos="fade-down" data-aos-delay={100}>
                                 <i className="bi bi-emoji-smile" />
                                 <div>
-                                    <Icon.MortarboardFill size={36} className='icon blueEnlace' />
-                                    <span className="purecounter">Solo 21</span>
-                                    <p>Jóvenes de cada 100 logran terminar la universidad en México. Solo 1 tendrá un posgrado</p>
+                                    <Icon.PiggyBankFill size={36} className='icon blueEnlace' />
+                                    <span className="purecounter">73%</span>
+                                    <p>De los jóvenes que ahorran, lo hacen a través de medios informales.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <div className="count-box" data-aos="fade-down" data-aos-delay={400}>
                                 <div>
-                                    <Icon.CashStack size={36} className='icon blueEnlace' />
-                                    <span className="purecounter">+78%</span>
-                                    <p>el salario promedio de alguien con licenciatura en México en comparación de alguien con solo bachillerato</p>
+                                    <Icon.CupFill size={36} className='icon blueEnlace' />
+                                    <span className="purecounter">Hasta 12%</span>
+                                    <p>de tu ingreso puede estar siendo gasto hormiga, compras que probablemente no gozas tanto y aún así haces.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <div className="count-box" data-aos="fade-down" data-aos-delay={800}>
                                 <div>
-                                    <Icon.Backpack4Fill size={36} className='icon blueEnlace' />
-                                    <span className="purecounter">$5 MDP</span>
-                                    <p>Será el costo promedio de una licenciatura en universidad privada para 2039</p>
+                                    <Icon.HouseFill size={36} className='icon blueEnlace' />
+                                    <span className="purecounter">Ahorrar 10%</span>
+                                    <p>De tu ingreso puede ayudarte a tangibilizar tus metas de mediano y largo plazo, si lo inviertes.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <div className="count-box" data-aos="fade-down" data-aos-delay={1200}>
                                 <div>
-                                    <Icon.Calendar3 size={36} className='icon blueEnlace' />
-                                    <span className="purecounter">15 años</span>
-                                    <p>Es el promedio de tiempo de un crédito educativo bancarizado, 3 veces más que la duración de la carrera</p>
+                                    <Icon.CurrencyDollar size={36} className='icon blueEnlace' />
+                                    <span className="purecounter">X2</span>
+                                    <p>GNP duplica tu ahorro el primer año en tu plan Capitaliza. Por cada $1 que pongas, GNP pondrá otro.</p>
                                 </div>
                             </div>
                         </div>

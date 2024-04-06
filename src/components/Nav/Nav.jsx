@@ -44,21 +44,18 @@ const Nav = () => {
                         <ul>
                             <li><Link className="nav-link scrollto active" to={'/'}>Inicio</Link></li>
                             <li><Link className="nav-link scrollto" to={'/#nosotros'}>Nosotros</Link></li>
-                            <li className={`dropdown ${navRef.current && navRef.current.classList.contains('navbar-mobile') ? 'dropdown-active' : ''}`}><span>Planes de protección</span> <Icon.ChevronDown />
+                            <li className="dropdown"><Link><span>Planes</span> <Icon.ChevronDown /></Link>
                                 <ul>
-                                    <li className="dropdown"><Link><span>Planes financieros</span> <Icon.ChevronRight /></Link>
-                                        <ul>
-                                            <li><Link to={'/ahorro-para-retiro'}>Proyecta: Plan para el retiro con seguro de vida e invalidez</Link></li>
-                                            <li><Link to={'/plan-de-ahorro-para-educacion'}>Profesional: Plan para la educación de tus hijos</Link></li>
-                                            <li><Link to={'/plan-de-inversion-para-ahorro'}>Capitaliza: Para inversión de ahorro con deducibilidad</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li><Link to={'/seguro-para-auto'}>Seguro de Auto</Link></li>
-                                    <li><Link to={'/seguro-gastos-medicos-mayores'}>Seguro de Gastos Médicos Mayores</Link></li>
-                                    <li><Link to={'/seguro-para-hogar'}>Seguro para el hogar</Link></li>
+                                    <li><Link to={'/ahorro-para-retiro'}>Proyecta: Plan para el retiro con seguro de vida</Link></li>
+                                    <li><Link to={'/plan-de-ahorro-para-educacion'}>Profesional: Plan para la educación</Link></li>
+                                    <li><Link to={'/plan-de-inversion-para-ahorro'}>Capitaliza: Plan de inversión de ahorros</Link></li>
                                 </ul>
                             </li>
-                            <li><Link className="getstarted scrollto" href="#about">Cotiza ahora</Link></li>
+                            <li><Link to={'/seguro-para-auto'}>Seguro de auto</Link></li>
+                            <li><Link to={'/seguro-gastos-medicos-mayores'}>Gastos Médicos Mayores</Link></li>
+                            <li><Link to={'/seguro-para-hogar'}>Seguro para hogar</Link></li>
+
+                            {/* <li><Link className="getstarted scrollto" to={'/#contacto'}>Cotiza ahora</Link></li> */}
                         </ul>
                         <Icon.List className={`mobile-nav-toggle ${isOpen ? 'color-white' : ''}`} onClick={toggleMenu} />
                     </nav>{/* .navbar */}

@@ -46,7 +46,7 @@ const Auto = () => {
                                 <div>
                                     <Icon.Incognito size={36} className='icon grey' />
                                     <span className="purecounter">166</span>
-                                    <p>vehículos son robados diariamente en la CDMX.</p>
+                                    <p>vehículos son robados diariamente en la Ciudad de México.</p>
                                 </div>
                             </div>
                         </div>
