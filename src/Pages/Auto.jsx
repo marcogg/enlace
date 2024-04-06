@@ -1,10 +1,13 @@
 import Footer from '../components/Footer/Footer'
 import * as Icon from 'react-bootstrap-icons'
 import Nav from '../components/Nav/Nav'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 const Auto = () => {
     return (
         <>
+            {/* Scroll To Top */}
+            <ScrollToTop />
             <Nav />
             {/* ======= Counts Section ======= */}
             <section className="counts" id="seguro-auto">

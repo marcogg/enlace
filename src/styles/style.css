@@ -367,7 +367,7 @@ section {
   color: #0D204A;
   font-size: 28px;
   cursor: pointer;
-  display: none;
+  /* display: none; */
   line-height: 0;
   transition: 0.5s;
 }
@@ -437,7 +437,7 @@ section {
 
 .navbar-mobile .dropdown ul {
   position: static;
-  display: none;
+  /* display: none; */
   margin: 10px 20px;
   padding: 10px 0;
   z-index: 99;

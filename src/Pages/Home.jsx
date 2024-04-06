@@ -8,6 +8,7 @@ import Nav from '../components/Nav/Nav'
 import { Link } from 'react-router-dom'
 import Accordion from 'react-bootstrap/Accordion'
 import Footer from '../components/Footer/Footer'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 const Home = () => {
   useEffect(() => {
@@ -19,7 +20,8 @@ const Home = () => {
     <>
       {/* NAV */}
       <Nav />
-
+      {/* Scroll To Top */}
+      <ScrollToTop />
       {/* ======= Hero Section ======= */}
       <section id="hero" className="hero d-flex align-items-center">
         <div className="container">

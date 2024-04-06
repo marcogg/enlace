@@ -2,10 +2,14 @@ import Footer from '../components/Footer/Footer'
 import * as Icon from 'react-bootstrap-icons'
 import Nav from '../components/Nav/Nav'
 import { Link } from 'react-router-dom'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
+
 
 const SeguroGMM = () => {
     return (
         <>
+            {/* Scroll To Top */}
+            <ScrollToTop />
             <Nav />
             {/* ======= Counts Section ======= */}
             <section className="counts" id="sgmm">

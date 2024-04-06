@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Whatsapp from '../WhatsApp/WhatsApp'
 import * as Icon from 'react-bootstrap-icons'
 
 const Footer = () => {
@@ -49,7 +50,7 @@ const Footer = () => {
                             <div className="col-lg-4 col-12 footer-links">
                                 <h4>Nuestros Planes</h4>
                                 <ul>
-                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/plan-ahorro-retiro'}>Plan Proyecta: PPR + Seguro de vida</Link></li>
+                                    <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/ahorro-para-retiro'}>Plan Proyecta: PPR + Seguro de vida</Link></li>
                                     <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/plan-de-inversion-para-ahorro'}>Plan Capitaliza: Inversión de Ahorros</Link></li>
                                     <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/plan-de-ahorro-para-educacion'}>Plan Profesional: Ahorro para educación + Seguro Vida</Link></li>
                                     <li><Icon.ChevronBarRight className="bi bi-chevron-right" /> <Link to={'/seguro-gastos-medicos-mayores'}>SGMM</Link></li>
@@ -68,6 +69,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>{/* End Footer */}
+            <Whatsapp />
         </>
     )
 }
