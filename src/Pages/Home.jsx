@@ -1,9 +1,10 @@
-import { useEffect } from 'react'
 import '../../node_modules/bootstrap/scss/bootstrap.scss'
 import '../styles.scss'
 // import function to register Swiper custom elements
-import { register } from 'swiper/element/bundle'
-import * as Icon from 'react-bootstrap-icons';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css'
+import * as Icon from 'react-bootstrap-icons'
 import Nav from '../components/Nav/Nav'
 import { Link } from 'react-router-dom'
 import Accordion from 'react-bootstrap/Accordion'
@@ -11,10 +12,11 @@ import Footer from '../components/Footer/Footer'
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 const Home = () => {
-  useEffect(() => {
-    // For Swiper
-    register();
-  }, [])
+
+  const toPlanes = () => {
+    window.location = '/#planes'
+  }
+
 
   return (
     <>
@@ -36,7 +38,7 @@ const Home = () => {
               </div>
               <div data-aos="fade-up" data-aos-delay={800}>
                 <div className="text-center text-lg-start">
-                  <Link to={'/#planes'} className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                  <Link onClick={toPlanes} className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                     <span>Conoce los planes</span>
                     <i className="bi bi-arrow-right" />
                   </Link>
@@ -65,7 +67,7 @@ const Home = () => {
                   </p>
                   <div className="text-center text-lg-start">
                     <Link to={'/#planes'} className="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                      <span>Conoce nuestras soluciones</span>
+                      <span onClick={toPlanes}>Conoce nuestras soluciones</span>
                       <i className="bi bi-arrow-right" />
                     </Link>
                   </div>
@@ -299,8 +301,9 @@ const Home = () => {
               <p>Más de 30 años protegiendo la estabilidad económica y patrimonial de tu familia.</p>
             </header>
             <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay={200}>
-              <swiper-container slides-per-view="3" speed="500" loop="true" css-mode="true">
-                <swiper-slide>
+              {/* -----------------------SWIPER-------------------------- */}
+              <Swiper speed="500" loop="true" css-mode="true" spaceBetween={50} slidesPerView={3} navigation pagination={{ clickable: true }} scrollbar={{ draggable: true }}>
+                <SwiperSlide>
                   <div className="testimonial-item">
                     <div className="stars">
                       <i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" />
@@ -309,73 +312,73 @@ const Home = () => {
                       Llevo 6 años capitalizando mi plan Proyecta con seguro de vida y me da una enorme paz saber que podré gozar de un retiro digno. Es un regalo de ti, para tu yo del futuro.
                     </p>
                     <div className="profile mt-auto">
-                      <img src="../img/testimonials/testimonials-1.jpg" className="testimonial-img" alt />
+                      <img src="../img/testimonials/testimonio1.jpg" className="testimonial-img" alt />
                       <h3>Marco García</h3>
                       <h4>Plan de retiro</h4>
                     </div>
                   </div>
-                </swiper-slide>{/* End testimonial item */}
-                <swiper-slide>
+                </SwiperSlide>{/* End testimonial item */}
+                <SwiperSlide>
                   <div className="testimonial-item">
                     <div className="stars">
                       <i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" />
                     </div>
                     <p>
-                      Llevo 6 años capitalizando mi plan Proyecta con seguro de vida y me da una enorme paz saber que podré gozar de un retiro digno. Es un regalo de ti, para tu yo del futuro.
+                      Me gusta que mis ahorros generen rendimientos para mí, pero no tengo tiempo ni experiencia con inversiones. Gracias a GNP puedo crecer mi patrimonio de una manera segura, sin preocupaciones y sin necesidad de ser financiero.
                     </p>
                     <div className="profile mt-auto">
-                      <img src="../img/testimonials/testimonials-2.jpg" className="testimonial-img" alt />
+                      <img src="../img/testimonials/testimonio2.jpg" className="testimonial-img" alt />
                       <h3>Iván García</h3>
-                      <h4>Plan de Ahorro</h4>
+                      <h4>Plan Capitaliza</h4>
                     </div>
                   </div>
-                </swiper-slide>{/* End testimonial item */}
-                <swiper-slide>
+                </SwiperSlide>{/* End testimonial item */}
+                <SwiperSlide>
                   <div className="testimonial-item">
                     <div className="stars">
                       <i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" />
                     </div>
                     <p>
-                      lorem ipsum dolor sit amet, consectetur adip
+                      Soy emprendedora y no tengo AFORE, pero necesitaba un plan para mi retiro. El plan Proyecta de Enlace me es muy práctico para que pueda alcanzar mi meta de una jubilación, mientras estoy protegida con un seguro de vida.
                     </p>
                     <div className="profile mt-auto">
-                      <img src="../img/testimonials/testimonials-3.jpg" className="testimonial-img" alt />
-                      <h3>Otro cliente</h3>
-                      <h4>SGMM</h4>
+                      <img src="../img/testimonials/testimonio4.jpg" className="testimonial-img" alt />
+                      <h3>Elvira Dominguez</h3>
+                      <h4>Plan Retiro</h4>
                     </div>
                   </div>
-                </swiper-slide>{/* End testimonial item */}
-                <swiper-slide>
+                </SwiperSlide>{/* End testimonial item */}
+                <SwiperSlide>
                   <div className="testimonial-item">
                     <div className="stars">
                       <i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" />
                     </div>
                     <p>
-                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                      Yo no sé nada de inversiones, pero no quería que mis ahorros se los comiera la inflación. Con mi plan Capitaliza estoy ahorrando para mi viaje a Europa y al mismo tiempo para el enganche de mi casa.
                     </p>
                     <div className="profile mt-auto">
-                      <img src="../img/testimonials/testimonials-4.jpg" className="testimonial-img" alt />
-                      <h3>Matt Brandon</h3>
-                      <h4>Freelancer</h4>
+                      <img src="../img/testimonials/testimonio3.jpg" className="testimonial-img" alt />
+                      <h3>Julio Gamez</h3>
+                      <h4>Capitaliza</h4>
                     </div>
                   </div>
-                </swiper-slide>{/* End testimonial item */}
-                <swiper-slide>
+                </SwiperSlide>{/* End testimonial item */}
+                <SwiperSlide>
                   <div className="testimonial-item">
                     <div className="stars">
                       <i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" /><i className="bi bi-star-fill" />
                     </div>
                     <p>
-                      Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                      Quiero que mi hija pueda estudiar cualquier cosa que quiera. Con mi plan profesional, no me tengo que preocupar para cuando ella tenga 18 años, estoy usando el tiempo a mi favor para difrutar su etapa universitaria.
                     </p>
                     <div className="profile mt-auto">
-                      <img src="../img/testimonials/testimonials-5.jpg" className="testimonial-img" alt />
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
+                      <img src="../img/testimonials/testimonio5.jpg" className="testimonial-img" alt />
+                      <h3>María Gil</h3>
+                      <h4>Plan profesional</h4>
                     </div>
                   </div>
-                </swiper-slide>{/* End testimonial item */}
-              </swiper-container>
+                </SwiperSlide>{/* End testimonial item */}
+              </Swiper>
               <div className="swiper-pagination" />
             </div>
           </div>
