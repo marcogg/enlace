@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Whatsapp from '../WhatsApp/WhatsApp'
 import * as Icon from 'react-bootstrap-icons'
+import HubspotForm from 'react-hubspot-form'
 
 const Footer = () => {
     return (
@@ -15,9 +16,14 @@ const Footer = () => {
                                 <p>Déjanos tu correo para que construyamos juntos un plan a tu medida. Nada de spam ✉️</p>
                             </div>
                             <div className="col-lg-6">
-                                <form action method="post">
-                                    <input type="email" name="email" /><input type="submit" defaultValue="Subscribe" />
-                                </form>
+                                <HubspotForm
+                                    portalId='45846752'
+                                    formId='a90f89a8-98b0-42ab-aef0-e1d989b38e22'
+                                    onSubmit={() => console.log('Enviado!')}
+                                    onReady={(form) => console.log(`Hubspot Form ready: ${form}!`)}
+                                    loading={<div>Cargando...</div>}
+                                    style={{ display: 'flex' }}
+                                />
                             </div>
                         </div>
                     </div>

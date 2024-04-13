@@ -2,7 +2,8 @@ import '../../node_modules/bootstrap/scss/bootstrap.scss'
 import '../styles.scss'
 // import function to register Swiper custom elements
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
+import HubspotForm from 'react-hubspot-form'
 import 'swiper/css'
 import * as Icon from 'react-bootstrap-icons'
 import Nav from '../components/Nav/Nav'
@@ -423,29 +424,15 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+              {/* CONTACT FORM HUBSPOT */}
               <div className="col-lg-6">
-                <form action="forms/contact.php" method="post" className="php-email-form">
-                  <div className="row gy-4">
-                    <div className="col-md-6">
-                      <input type="text" name="name" className="form-control" placeholder="Nombre completo" required />
-                    </div>
-                    <div className="col-md-6 ">
-                      <input type="email" className="form-control" name="email" placeholder="Email" required />
-                    </div>
-                    <div className="col-md-12">
-                      <input type="text" className="form-control" name="subject" placeholder="Asunto" required />
-                    </div>
-                    <div className="col-md-12">
-                      <textarea className="form-control" name="message" rows={6} placeholder="Mensaje" required defaultValue={""} />
-                    </div>
-                    <div className="col-md-12 text-center">
-                      <div className="loading">Cargando</div>
-                      <div className="error-message" />
-                      <div className="sent-message">Tus datos han sido enviados!</div>
-                      <button type="submit">Quiero empezar a invertir</button>
-                    </div>
-                  </div>
-                </form>
+                <HubspotForm
+                  portalId='45846752'
+                  formId='218ab8ac-cf65-4558-bf2f-83b24b194fbc'
+                  onSubmit={() => console.log('Enviado!')}
+                  onReady={(form) => console.log(`Hubspot Form ready: ${form}!`)}
+                  loading={<div>Cargando...</div>}
+                />
               </div>
             </div>
           </div>
