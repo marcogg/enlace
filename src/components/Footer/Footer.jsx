@@ -17,8 +17,8 @@ const Footer = () => {
                             </div>
                             <div className="col-lg-6">
                                 <HubspotForm
-                                    portalId='45846752'
-                                    formId='a90f89a8-98b0-42ab-aef0-e1d989b38e22'
+                                    portalId='48705185'
+                                    formId='d82e1a32-9a58-4b83-9ba2-a75423b7e70d'
                                     onSubmit={() => console.log('Enviado!')}
                                     onReady={(form) => console.log(`Hubspot Form ready: ${form}!`)}
                                     loading={<div>Cargando...</div>}

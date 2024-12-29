@@ -13,11 +13,9 @@ import Footer from '../components/Footer/Footer'
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 const Home = () => {
-
   const toPlanes = () => {
     window.location = '/#planes'
   }
-
 
   return (
     <>
@@ -128,7 +126,7 @@ const Home = () => {
               <p>Brinda respaldo económico y tranquilidad a ti y tus seres queridos desde $20 al día*</p>
             </header>
             <div className="row">
-              <div className="col-lg-6">
+              <div className='col-lg-6'>
                 <img src="../img/servicios.svg" className="img-fluid" alt />
               </div>
               <div className="col-lg-6 mt-5 mt-lg-0 d-flex">
@@ -425,19 +423,20 @@ const Home = () => {
                 </div>
               </div>
               {/* CONTACT FORM HUBSPOT */}
-              <div className="col-lg-6">
-                <HubspotForm
-                  portalId='45846752'
-                  formId='218ab8ac-cf65-4558-bf2f-83b24b194fbc'
-                  onSubmit={() => console.log('Enviado!')}
-                  onReady={(form) => console.log(`Hubspot Form ready: ${form}!`)}
-                  loading={<div>Cargando...</div>}
-                />
-              </div>
-            </div>
-          </div>
-        </section>{/* End Contact Section */}
-      </main > {/* End #main */}
+                      <div className='col-lg-6'>
+                      <HubspotForm
+                        portalId='48705185'
+                        formId='d82e1a32-9a58-4b83-9ba2-a75423b7e70d'
+                        onSubmit={() => console.log('Enviado!')}
+                        onReady={(form) => console.log(`Hubspot Form ready: ${form}!`)}
+                        loading={<div>Cargando...</div>}
+                        style={{ display: 'flex' }}
+                      />
+                      </div>
+                    </div>
+                    </div>
+                  </section>{/* End Contact Section */}
+      </main> {/* End #main */}
       {/* FOOTER */}
       <Footer />
       <Link to={'/#'} className="back-to-top d-flex align-items-center justify-content-center"><Icon.ArrowUp /></Link>
